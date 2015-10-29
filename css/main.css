@@ -4,7 +4,34 @@
 
 
 /* HEADER ============================== */
-
+header{
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
 /* ABOUT ============================== */
-
+#blog{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    border: solid 2px #000;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 5px #1a1a1a;
+}
 /* COMPONENTS ============================== */
+.container{
+    margin: 0 auto;
+    width: 90%;
+    border: solid 2px #000;
+    padding: 20px;
+    background-color: #fffff0;
+    border-radius: 7px;
+    box-shadow: 10px 10px 5px #1a1a1a;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: #818181;
+}
