@@ -3,12 +3,41 @@
 ============================================================*/
 
 
-/* HEADER ============================== */
+/* HEADER and NAV ============================== */
 header{
     text-align: center;
     padding: 20px;
     font-size: 3.5em;
     font-family: 'Cinzel', serif;
+}
+
+#nav ul{
+    width: 100%;
+    list-style-type: none;
+    margin-left: 75px;
+    text-decoration: none;
+
+}
+#nav li{
+    display: inline;
+    padding: 20px;
+    margin-right: 55px;
+}
+#nav a:hover{
+    border: solid 1px #ff0000;
+    color: #ff0000;
+    background-color: #FFF;
+    padding: 3px;
+}
+#nav a:link{
+    text-decoration: none;
+    border: solid 1px #000000;
+    padding: 4px;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 1.5em;
+}
+#nav a:visited{
+    color: #20ff0e;
 }
 /* ABOUT ============================== */
 #blog{
@@ -35,11 +64,14 @@ header{
 #weekOne{
     margin-left: 25px;
     border-bottom: solid 1px #000;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
 }
 article h1{
     margin: 25px;
-    width: 10%;
+    width: 15%;
     border-bottom: solid 1px #000;
+    font-family: 'Fontdiner Swanky', cursive;
 }
 img{
     width: 100%;
