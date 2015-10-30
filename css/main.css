@@ -35,6 +35,7 @@ header{
     padding: 4px;
     font-family: 'Fontdiner Swanky', cursive;
     font-size: 1.5em;
+    margin-left: 75px;
 }
 #nav a:visited{
     color: #20ff0e;
