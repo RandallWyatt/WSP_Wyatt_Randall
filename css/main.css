@@ -67,6 +67,7 @@ header{
     width: 85%;
     text-align: justify;
     font-family: 'IM Fell English', serif;
+    margin: 0 auto;
 }
 #weekOne{
     margin-left: 25px;
