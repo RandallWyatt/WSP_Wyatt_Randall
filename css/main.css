@@ -62,6 +62,12 @@ header{
     border-radius: 7px;
     box-shadow: 10px 10px 5px #1a1a1a;
 }
+.container p{
+    font-size: 1.5em;
+    width: 85%;
+    text-align: justify;
+    font-family: 'IM Fell English', serif;
+}
 #weekOne{
     margin-left: 25px;
     border-bottom: solid 1px #000;
