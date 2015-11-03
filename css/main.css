@@ -20,7 +20,7 @@ nav ul{
 nav li{
     display: inline-block;
     padding: 10px;
-    margin-right: 0 20px;
+    margin: 0 20px;
 }
 nav a:hover{
     border: solid 1px #ff0000;
@@ -75,6 +75,8 @@ nav a:visited{
     font-size: 2.5em;
 }
 article{
+    padding-bottom: 20px;
+    padding-top: 20px;
     border-bottom: solid 10px #888;
 }
 article h1{
