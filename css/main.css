@@ -11,37 +11,36 @@ header{
     font-family: 'Cinzel', serif;
 }
 
-#nav ul{
+nav ul{
     width: 100%;
     list-style-type: none;
-    margin-left: 65px;
     text-decoration: none;
-
+    text-align: center;
 }
-#nav li{
-    display: inline;
-    padding: 5px;
-    margin-right: 55px;
+nav li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 0 20px;
 }
-#nav a:hover{
+nav a:hover{
     border: solid 1px #ff0000;
     color: #ff0000;
     background-color: #FFF;
-    padding: 3px;
+    padding: 10px;
 }
-#nav a:link{
+nav a:link{
     text-decoration: none;
     border: solid 1px #000000;
     padding: 4px;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 1.5em;
-    margin-left: 30px;
+
 }
-#nav a:visited{
+nav a:visited{
     color: #20ff0e;
 }
 /* ABOUT ============================== */
-#blog{
+#about{
     width: 70%;
     margin: 0 auto;
     padding: 20px;
@@ -61,6 +60,7 @@ header{
     background-color: #fffff0;
     border-radius: 7px;
     box-shadow: 10px 10px 5px #1a1a1a;
+    font-family: 'IM Fell English', serif;
 }
 .container p{
     font-size: 1.5em;
@@ -71,28 +71,24 @@ header{
 }
 #weekOne{
     margin-left: 25px;
-    border-bottom: solid 1px #000;
-    font-family: 'IM Fell English', serif;
+    border-bottom: solid 1px #eaeaea;
     font-size: 2.5em;
 }
-#weekTwo{
-    margin-left: 25px;
-    border-bottom: solid 1px #000;
-    font-family: 'IM Fell English', serif;
-    font-size: 2.5em;
+article{
+    border-bottom: solid 10px #888;
 }
 article h1{
-    margin: 25px;
     width: 25%;
-    border-bottom: solid 1px #000;
+    border-bottom: solid 1px #eaeaea;
     font-family: 'IM Fell English', serif;
     font-size: 35px;
+    color: #888;
 }
-article h2{
-    margin: 25px;
+h2{
+    margin:40px 0 15px 0;
     width: 40%;
-    border-bottom: solid 1px #000;
-    font-family: 'IM Fell English', serif;
+    border-bottom: solid 1px #eaeaea;
+    color: #888;
 }
 img{
     width: 100%;
@@ -101,27 +97,7 @@ img{
 body{
     background-color: #818181;
 }
-#page2{
-    list-style-type: none;
-    margin-left: 500px;
-    text-decoration: none;
-    font-family: 'IM Fell English', serif;
-    padding: 10px;
-}
-#page2 a:link{
-    text-decoration: none;
-    border: solid 1px #000000;
-    padding: 4px;
-    font-family: 'IM Fell English', serif;
-    font-size: 1.5em;
-    
-}
-#page2 a:hover{
-    border: solid 1px #ff0000;
-    color: #ff0000;
-    background-color: #FFF;
-    padding: 3px;
-}
+
 footer{
     text-align: center;
     margin: 0 auto;
