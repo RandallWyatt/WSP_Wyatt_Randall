@@ -2,3 +2,37 @@
 ============================================================
 ============================================================*/
 
+#container{
+    background-color: #3f3e46;
+}
+
+img{
+    background-color: transparent;
+}
+
+ul{
+    display: inline-block;
+    clear: both;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 3em;
+}
+p{
+    font-family: 'Stevie Sans Book', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+}
+
+li{
+    display: inline-block;
+    width: 25%;
+    color: #FFF;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}

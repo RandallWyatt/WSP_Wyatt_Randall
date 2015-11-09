@@ -20,24 +20,26 @@ nav ul{
 nav li{
     display: inline-block;
     padding: 10px;
-    margin: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 nav a:hover{
     border: solid 1px #ff0000;
     color: #ff0000;
     background-color: #FFF;
-    padding: 10px;
+    padding: 5px;
 }
 nav a:link{
     text-decoration: none;
-    border: solid 1px #000000;
     padding: 4px;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 nav a:visited{
-    color: #20ff0e;
+    color: #0015ff;
 }
 /* ABOUT ============================== */
 #about{
@@ -74,6 +76,11 @@ nav a:visited{
     border-bottom: solid 1px #eaeaea;
     font-size: 2.5em;
 }
+#weekTwo{
+    margin-left: 25px;
+    border-bottom: solid 1px #eaeaea;
+    font-size: 2.5em;
+}
 article{
     padding-bottom: 20px;
     padding-top: 20px;
@@ -100,6 +107,23 @@ body{
     background-color: #818181;
 }
 
+a:link{
+    text-decoration: none;
+    padding: 4px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+    color: #000;
+}
+a:hover{
+    border: solid 1px #ff0000;
+    color: #ff0000;
+    background-color: #FFF;
+    padding: 4px;
+}
+a:visited{
+    color: #FFF;
+}
 footer{
     text-align: center;
     margin: 0 auto;
@@ -107,4 +131,18 @@ footer{
     color: #ffffff;
     font-family: 'Amatic SC', cursive;
     font-size: 2em;
+}
+.button{
+    display:       inline-block;
+    padding:       8px 20px;
+    background:    #073763 url('http://dabuttonfactory.com/button.png?w=1&h=40&bgt=gradient&bgc=3d85c6&ebgc=073763') repeat-x;
+    background:    -moz-linear-gradient(#3d85c6, #073763);
+    background:    -o-linear-gradient(#3d85c6, #073763);
+    background:    -webkit-linear-gradient(#3d85c6, #073763);
+    background:    linear-gradient(#3d85c6, #073763);
+    border-radius: 5px;
+    color:         #fff;
+    font:          normal 700 24px/1 "Calibri", sans-serif;
+    text-align:    center;
+    text-shadow:   1px 1px 0 #000;
 }
