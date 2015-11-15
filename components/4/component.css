@@ -1,4 +1,37 @@
 /* Component Stylesheet 
 ============================================================
 ============================================================*/
+body{
+    width: 100%;
+}
+li{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px;
+}
 
+
+
+
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    outline: none;
+    padding: 9px 19px;
+    font-size: 14px;
+    line-height: 32px;
+    border-radius: 0;
+    -moz-transition: 0.2s all ease;
+    -webkit-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+    padding-right: 6px;
+    position: relative;
+    box-shadow: 10px 10px 21px 1px rgba(0, 0, 0, 0.12);
+}
