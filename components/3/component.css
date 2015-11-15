@@ -1,108 +1,578 @@
-/* HEADER and NAV ============================== */
-header{
-    text-align: center;
-    padding: 20px;
-    font-size: 3.5em;
-    font-family: 'Cinzel', serif;
+
+/*========================================================
+                      Main Styles
+=========================================================*/
+body {
+    color: #cdcdce;
+    font: 400 14px/20px "Roboto", sans-serif;
+    -webkit-text-size-adjust: none;
+    width: 50%;
 }
 
-nav ul{
-    width: 100%;
-    list-style-type: none;
-    text-decoration: none;
-    text-align: center;
+img {
+    max-width: 100%;
+    height: auto;
 }
-nav li{
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: #222431;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h3 span {
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+p a:hover, .terms-list dd a:hover, .marked-list a:hover, .list a:hover {
+    text-decoration: underline;
+}
+p .fa, .terms-list dd .fa, .marked-list .fa, .list .fa {
+    text-decoration: none;
+    width: 20%;
+}
+
+time {
+    display: block;
+}
+
+a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+a:focus {
+    outline: none;
+}
+a:active {
+    background-color: transparent;
+}
+
+hr {
     display: inline-block;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 13px;
+    width: 133px;
+    margin: 0;
+    border: none;
+    background: #e25576;
 }
-nav a:hover{
-    border: solid 1px #ff0000;
-    color: #ff0000;
-    background-color: #FFF;
-    padding: 5px;
-}
-nav a:link{
-    text-decoration: none;
-    padding: 4px;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
-}
-nav a:visited{
-    color: #0015ff;
-}
-/* ABOUT ============================== */
-#about{
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: justify;
-    border: solid 2px #000;
-    background-color: #ffffff;
-    box-shadow: 10px 10px 5px #1a1a1a;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 1.5em;
-}
-/* COMPONENTS ============================== */
-.container{
-    margin: 0 auto;
-    width: 90%;
-    border: solid 2px #000;
-    padding: 20px;
-    background-color: #fffff0;
-    border-radius: 7px;
-    box-shadow: 10px 10px 5px #1a1a1a;
-    font-family: 'IM Fell English', serif;
-}
-body{
-    background-color: #818181;
-}
-article{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-bottom: solid 10px #888;
-}
-article h1{
-    width: 25%;
-    border-bottom: solid 1px #eaeaea;
-    font-family: 'IM Fell English', serif;
-    font-size: 35px;
-    color: #888;
-}
-h2{
-    margin:40px 0 15px 0;
-    width: 40%;
-    border-bottom: solid 1px #eaeaea;
-    color: #888;
-}
-a:link{
+a[href^="tel:"],
+a[href^="callto:"] {
+    color: inherit;
     text-decoration: none;
-    padding: 4px;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 1em;
-    margin: 0 auto;
-    color: #000;
+}
 
+strong {
+    font-weight: 700;
 }
-a:hover{
-    border: solid 1px #ff0000;
-    color: #ff0000;
-    background-color: #FFF;
-    padding: 3px;
+
+.fa {
+    line-height: inherit;
 }
-a:visited{
-    color: #0015ff;
-}
-footer{
+
+.center {
     text-align: center;
-    margin: 0 auto;
-    padding: 20px;
-    color: #ffffff;
-    font-family: 'Amatic SC', cursive;
-    font-size: 2em;
+}
+
+.img_add {
+    margin-top: 5px;
+}
+
+.img_add2 {
+    margin-top: -25px;
+}
+
+.primary-color {
+    color: #e25576;
+}
+.primary-color a:hover {
+    color: #222431;
+}
+
+.secondary-color {
+    color: #222431;
+}
+
+[class*='fa-']:before {
+    font-weight: 400;
+    font-family: "FontAwesome";
+}
+
+.page {
+    overflow: hidden;
+    min-height: 500px;
+}
+.lt-ie9 .page {
+    min-width: 1200px;
+}
+
+.off {
+    margin-top: -5px;
+}
+
+@media (max-width: 991px) {
+    .clr {
+        clear: both;
+    }
+}
+.border {
+    position: relative;
+}
+.border:before {
+    content: '';
+    position: absolute;
+    width: 3000px;
+    left: -100%;
+    right: 0;
+    height: 1px;
+    background: #e3e3e3;
+    bottom: -174px;
+}
+
+/*=======================================================
+                       Main Layout
+=========================================================*/
+* + .row {
+    margin-top: 15px;
+    width: 50%;
+}
+
+* + .row.offset {
+    margin-top: 0;
+}
+
+* + .row.offset2 {
+    margin-top: 5px;
+}
+
+* + .row.offset3 {
+    margin-top: 22px;
+}
+
+* + .btn {
+    margin-top: 32px;
+}
+
+* + .btn2 {
+    margin-top: 62px;
+}
+
+* + .index-list {
+    margin-top: 29px;
+}
+
+* + .box {
+    margin-top: 17px;
+}
+
+* + hr {
+    margin-top: 35px;
+}
+
+* + h2 {
+    margin-top: 47px;
+}
+
+* + h2.offset {
+    margin-top: 26px;
+}
+
+* + .img_wr {
+    margin-top: 40px;
+}
+
+* + .thumb {
+    margin-top: 36px;
+}
+
+* + .music-list {
+    margin-top: 12px;
+}
+
+* + .terms-list {
+    margin-top: 41px;
+}
+
+* + .music-list_mod1 {
+    margin-top: 42px;
+}
+
+* + .genres-list {
+    margin-top: 22px;
+}
+
+.custom-list + h6 {
+    margin-top: 20px;
+}
+
+.genres-list + h3 {
+    margin-top: 40px;
+}
+
+h3 + .box {
+    margin-top: 30px;
+}
+
+h3 + h6 {
+    margin-top: 30px;
+}
+
+.thumb + h6 {
+    margin-top: 24px;
+}
+
+.box + .btn {
+    margin-top: 8px;
+}
+
+.index-list + .btn {
+    margin-top: 12px;
+}
+
+.img_wr + h6 {
+    margin-top: 25px;
+}
+
+/*=======================================================
+                        Components
+=========================================================*/
+/*==================     Brand     ======================*/
+.brand {
+    display: inline-block;
+}
+.brand_name {
+    overflow: hidden;
+    margin-top: 12px;
+}
+.brand_slogan {
+    text-transform: uppercase;
+    color: #222431;
+    letter-spacing: 5.6px;
+    font-family: "Roboto Slab", serif;
+    margin-top: 6px;
+}
+
+/*==================  Custom List  ======================*/
+.custom-list li a:hover {
+    color: #222431;
+}
+
+/*==================  Backgrounds  ======================*/
+
+/*==================    Buttons    ======================*/
+.btn, .btn2 {
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+.btn {
+    color: #e25576;
+    text-decoration: underline;
+}
+.btn:hover {
+    color: #cdcdce;
+}
+.btn:active {
+    color: #b3b3b5;
+}
+
+.btn2 {
+    color: #fff;
+    background: #e25576;
+    padding: 17px 50px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.btn2:hover {
+    background: #222431;
+}
+.btn2:active {
+    background: #0d0e13;
+}
+
+
+/*==================    Info List   ======================*/
+.info-list li {
+    display: inline-block;
+    position: relative;
+}
+.info-list li:before {
+    content: '/';
+    position: absolute;
+    right: -33px;
+    top: 0;
+    font-size: 30px;
+    line-height: 47px;
+    letter-spacing: 2.25px;
+    text-transform: uppercase;
+    color: #e25576;
+}
+.info-list li a {
+    color: #e25576;
+    letter-spacing: 2.25px;
+    line-height: 47px;
+}
+.info-list li a:hover {
+    color: #cdcdce;
+}
+.info-list li + li {
+    margin-left: 55px;
+}
+
+@media (max-width: 767px) {
+    .info-list li {
+        display: block;
+    }
+    .info-list li + li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/*==================   Index List  ======================*/
+.index-list {
+    counter-reset: li;
+}
+.index-list li {
+    position: relative;
+    padding-left: 60px;
+    border-bottom: 1px solid #cdcdce;
+    padding-bottom: 14px;
+}
+.index-list li:before {
+    content: counter(li,decimal-leading-zero) "/";
+    counter-increment: li;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #222431;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 3px;
+    -moz-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+.index-list li:last-child {
+    border: none;
+}
+.index-list li:hover:before {
+    color: #e25576;
+}
+.index-list li + li {
+    margin-top: 15px;
+}
+
+/*==================    Wrapper    ======================*/
+.custom_wr .wr {
+    background: #222431;
+    padding: 45px 35px 40px;
+    -moz-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+.custom_wr .wr * {
+    -moz-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+.custom_wr .wr time {
+    font-family: "Roboto Slab", serif;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+    color: #fff;
+}
+.custom_wr .wr h3, .custom_wr .wr h6 {
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: none;
+}
+.custom_wr .wr p, .custom_wr .wr .terms-list dd, .terms-list .custom_wr .wr dd {
+    color: #72758a;
+}
+.custom_wr .wr hr {
+    border: none;
+    display: block;
+    height: 5px;
+    width: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #72758a;
+}
+.custom_wr .wr * + p, .custom_wr .wr .terms-list * + dd, .terms-list .custom_wr .wr * + dd {
+    margin-top: 25px;
+}
+.custom_wr .wr * + hr {
+    margin-top: 23px;
+}
+.custom_wr .wr * + .btn {
+    margin-top: 15px;
+    color: #fff;
+}
+.custom_wr .wr * + .off {
+    margin-top: 23px;
+}
+
+
+.custom_wr + .custom_wr {
+    margin-top: 30px;
+}
+
+.artist_wr .row + .row .col-xs-2.col-sm-6.col-md-6, .artist_wr .row + .row .col-xs-3.col-sm-3.col-md-6 {
+    margin-top: 10px;
+    width: 30%;
+}
+
+.img_wr {
+    position: relative;
+
+}
+.img_wr h6 {
+    position: absolute;
+    background: #e25576;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    padding: 7px 20px;
+    color: #fff;
+}
+
+@media (max-width: 1199px) {
+    .artist_wr .col-xs-12.col-sm-12.col-md-12 {
+        text-align: center;
+    }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+    .img_wr h6 {
+        left: 42px;
+    }
+}
+@media (max-width: 991px) {
+    .main_wr .custom_wr img {
+        width: 100%;
+    }
+}
+@media (min-width: 767px) and (max-width: 800px) {
+    .img_wr img {
+        max-width: 90%;
+    }
+    .img_wr h6 {
+        left: 18px;
+    }
+}
+@media (max-width: 479px) {
+    .custom_wr img {
+        width: 100%;
+    }
+
+    .img_wr img {
+        width: 100%;
+    }
+}
+
+/*==================      Box      ======================*/
+.box {
+    border-bottom: 1px solid #cdcdce;
+}
+.box:before, .box:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.box:after {
+    clear: both;
+}
+.box p, .box .terms-list dd, .terms-list .box dd, .box time {
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.box_aside {
+    float: left;
+    font: 700 48px/48px "Roboto Slab", serif;
+    color: #222431;
+    letter-spacing: 3.6px;
+}
+.box_cnt__no-flow {
+    overflow: hidden;
+    padding-left: 20px;
+    padding-bottom: 18px;
+}
+.box:hover p, .box:hover .terms-list dd, .terms-list .box:hover dd, .box:hover time {
+    color: #e25576;
+}
+
+.box_mod1 {
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .box_cnt__no-flow {
+        padding-top: 25px;
+    }
+    .box_aside {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 479px) {
+    .box_cnt__no-flow {
+        padding-top: 5px;
+    }
+    .box_aside {
+        margin-bottom: 5px;
+    }
 }
