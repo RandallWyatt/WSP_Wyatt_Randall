@@ -1,4 +1,61 @@
 /* Component Stylesheet 
 ============================================================
 ============================================================*/
+body{
+    background-color: #1f2e43;
+}
+ul {
+    display: inline;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+    width: 45%;
+    text-align: center;
+    font-size: 2em;
+}
+ul li {
+    font: bold 12px/18px sans-serif;
+    display: inline-block;
+    margin:0 auto;
+    position: relative;
+    padding: 15px 20px;
+    background: #1f2e43;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.001em;
+    color: #fff;
+}
+ul li:hover {
+    border: solid 2px #3e4e64;
+    color: #fff;
+    padding: 14px;
+}
+ul li:visited{
+    color: #FFF;
+}
+ul li:link{
+color: #fff}
+}
+ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 150px;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
 
+}
+ul li ul li {
+
+    display: none;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover {
+display: none;
+}
+
+ul li:hover ul {
+    display: hidden;
+    color: #fff;
