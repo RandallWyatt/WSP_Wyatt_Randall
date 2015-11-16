@@ -11,6 +11,7 @@ ul {
     width: 45%;
     text-align: center;
     font-size: 2em;
+    color: #FFF;
 }
 ul li {
     font: bold 12px/18px sans-serif;
@@ -28,15 +29,16 @@ ul li:hover {
     border: solid 2px #3e4e64;
     color: #fff;
     padding: 14px;
+
 }
 ul li:visited{
     color: #FFF;
 }
 ul li:link{
-color: #fff}
+color: #fff
 }
 ul li ul {
-    padding: 0;
+    padding: 20px;
     position: absolute;
     top: 48px;
     left: 0;
@@ -44,18 +46,24 @@ ul li ul {
     box-shadow: none;
     display: none;
     opacity: 0;
+    color: #FFF;
 
 }
 ul li ul li {
 
     display: none;
     color: #fff;
-    text-shadow: 0 -1px 0 #000;
+
 }
 ul li ul li:hover {
 display: none;
+    color: #FFF;
 }
 
 ul li:hover ul {
-    display: hidden;
+    display: none;
     color: #fff;
+}
+ul li:visited{
+    color: #FFF;
+}
