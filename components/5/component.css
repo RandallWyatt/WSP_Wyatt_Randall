@@ -26,7 +26,7 @@ ul li {
     color: #fff;
 }
 ul li:hover {
-    border: solid 2px #3e4e64;
+    border: solid 4px #3e4e64;
     color: #fff;
     padding: 14px;
 
@@ -49,10 +49,10 @@ ul li ul {
     color: #FFF;
 
 }
-ul li ul li {
-
-    display: none;
-    color: #fff;
+ul li > a:only-child:after {
+    margin-left: 0;
+    border: none;
+}
 
 }
 ul li ul li:hover {
@@ -64,6 +64,41 @@ ul li:hover ul {
     display: none;
     color: #fff;
 }
-ul li:visited{
+ul :visited{
     color: #FFF;
+}
+li:hover li a:hover {background: #1f2e43;}
+/*--- DROPDOWN ---*/
+#nav ul{
+    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+    padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float:none;
+}
+#nav ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+    left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    border: solid 4px #3e4e64;
+    color: #fff;
+    padding: 14px;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+    border: solid 4px #3e4e64;
+    color: #fff;
+    padding: 14px;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    border: solid 4px #3e4e64;
+    color: #fff;
+    padding: 14px;
 }

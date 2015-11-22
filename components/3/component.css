@@ -6,7 +6,7 @@ body {
     color: #cdcdce;
     font: 400 14px/20px "Roboto", sans-serif;
     -webkit-text-size-adjust: none;
-    width: 50%;
+    width: 1000px;
 }
 
 img {
@@ -62,13 +62,6 @@ h6 {
     font-weight: 400;
 }
 
-p a:hover, .terms-list dd a:hover, .marked-list a:hover, .list a:hover {
-    text-decoration: underline;
-}
-p .fa, .terms-list dd .fa, .marked-list .fa, .list .fa {
-    text-decoration: none;
-    width: 20%;
-}
 
 time {
     display: block;
@@ -171,6 +164,14 @@ strong {
     background: #e3e3e3;
     bottom: -174px;
 }
+
+#thisWeek, #Tracks, #events{
+    width: calc(100%/3);
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 /*=======================================================
                        Main Layout
